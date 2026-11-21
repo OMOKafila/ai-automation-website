@@ -1,61 +1,90 @@
 
-/* General website styling */
+/* General website design */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f7fb;
-  color: #222;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #253047;
   line-height: 1.6;
 }
 
-/* Website header */
+/* Header */
 header {
-  background-color: #14213d;
+  background: #14213d;
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
+}
+
+header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #e5c77b;
+  font-size: 19px;
 }
 
 /* Main content */
 main {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-/* Service sections */
+/* Content sections */
 section {
-  background-color: white;
-  padding: 30px;
+  background: white;
+  padding: 35px;
   margin-bottom: 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
 }
 
-/* Headings */
 h2 {
   color: #14213d;
 }
 
-/* Contact link */
+/* Inquiry button */
 a {
   display: inline-block;
-  background-color: #2563eb;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
+  background: #c6a45c;
+  color: #14213d;
+  padding: 12px 25px;
   border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
-  background-color: #1d4ed8;
+  background: #e5c77b;
 }
 
 /* Footer */
 footer {
-  background-color: #14213d;
+  background: #14213d;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  main {
+    margin: 20px auto;
+  }
+}
+
